@@ -10,4 +10,5 @@ Java-based comand line application that gathers metadata from varioustypes of da
 
 # How to run
 `java -jar meta-collector-0.0.1-SNAPSHOT.jar crawl <filepath>`
+
 `java -jar meta-collector-0.0.1-SNAPSHOT.jar describe <filepath>`
