@@ -6,7 +6,7 @@ Java-based comand line application that gathers metadata from varioustypes of da
 * maven
 
 # How to build jar:
-Go to project root folder
+Go to project root folder and run the command
 
 `mvn clean install`
 
