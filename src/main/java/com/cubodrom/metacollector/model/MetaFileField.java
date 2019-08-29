@@ -93,13 +93,12 @@ public class MetaFileField {
 
     @Override
     public String toString() {
-        return "{" +
-                "id='" + id + '\'' +
-                ", filePath='" + filePath + '\'' +
+        return "[" +
+                "  filePath='" + filePath + '\'' +
                 ", fieldName='" + fieldName + '\'' +
                 ", fieldType='" + fieldType + '\'' +
                 ", nullValueAmount=" + nullValueAmount +
                 ", nonNullValueAmount=" + nonNullValueAmount +
-                '}';
+                ']';
     }
 }

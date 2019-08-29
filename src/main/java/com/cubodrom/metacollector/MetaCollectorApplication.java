@@ -42,8 +42,13 @@ public class MetaCollectorApplication implements CommandLineRunner {
                 LOG.info("Meta information has been successfully fetched and saved");
             } else if (Constances.DESCRIBE.equals(action)) {
                 List<MetaFileField> metaFileFields = describeService.act(filePath);
-                LOG.info("Fields meta list");
-                LOG.info(metaFileFields.stream().map(Objects::toString).collect(Collectors.joining(",")));
+                if (metaFileFields != null && !metaFileFields.isEmpty()) {
+                    LOG.info("Fields metadata list start\n");
+                    LOG.info(metaFileFields.stream().map(MetaFileField::toString).collect(Collectors.joining("\n")));
+                    LOG.info("Fields metadata list finish\n");
+                } else {
+                    LOG.info("There is no file for describing");
+                }
             } else {
                 LOG.info(String.format("Unsupported action type. Actual is %s, expected are %s", action, String.join(",", Constances.CRAWL, Constances.DESCRIBE)));
             }
