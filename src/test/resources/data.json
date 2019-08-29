@@ -1,0 +1,34 @@
+[
+  {
+    "event": "impression",
+    "width": 30,
+    "height": null,
+    "client_uid": "24213421343214123",
+    "location": "contract_lister_client",
+    "perimeter_x": 0
+  },
+  {
+    "event": "comment",
+    "width": 25,
+    "height": null,
+    "client_uid": "9958585857376",
+    "location": "contract_lister_client",
+    "perimeter_x": 90,
+    "perimeter_y": 0
+  },
+  {
+    "event": "add",
+    "width": null,
+    "height": 50,
+    "client_uid": "80938983974893743",
+    "location": "contract_lister_client"
+  },
+  {
+    "event": "remove",
+    "width": 33,
+    "height": 50,
+    "client_uid": "935098382234234324",
+    "location": "on_site",
+    "timestamp": 123324324343
+  }
+]
